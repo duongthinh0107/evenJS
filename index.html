@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        td{
+            padding:  0 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <table  class="table">
+        <tr class="header">
+            <th class="header_Amount">Amount</th>
+            <th class="header_From">From Currency</th>
+            <th class="toCurrency">To Currency</th>
+        </tr>
+        <tr class="body">
+            <td><label><input type="text" id="input"></label></td>
+            <td class = "currency" >
+                <select name="" id="select1" class="selectCurrency">
+                    <option value="VND" class="option">VND</option>
+                    <option value="USD" class="option">USD</option>
+<!--                    <option value="3" class="option">Japan</option>-->
+<!--                    <option value="4" class="option">China</option>-->
+                </select>
+            </td>
+            <td class = "to_currency">
+                <select name="" id="select2">
+                    <option value="VND">VND</option>
+                    <option value="USD">USD</option>
+                    <!--<option value="2">JPY</option>-->
+                    <!--<option value="4">CNY</option>-->
+                </select>
+            </td>
+            <td class="convert">
+                <button onclick=doS() class="button_convert">Convert</button>
+            </td>
+        </tr>
+    </table>
+    <p id="result"></p>
+
+<script src="index.js"></script>
+</body>
+</html>
